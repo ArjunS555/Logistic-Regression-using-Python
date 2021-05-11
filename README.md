@@ -1,7 +1,7 @@
 # Logistic-Regression-using-Python
 # Titanic dataset
 # Classification / binary / dichotomous / discrete / attributes / probability
-import os # operating system
+import os #operating system
 os.getcwd()
 os.chdir("C:\\Users\\Arjun\\Desktop\\Python\\LogitRegression")
 import numpy as np #array and mathematical calculation
@@ -60,8 +60,8 @@ scaler = StandardScaler()
 display(Z[:5])
 Z.age = scaler.fit_transform(Z[['age']])
 display(Z[:5])
-# Model Building
-# split the data into training and test
+#Model Building
+#split the data into training and test
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(Z, y, test_size=0.20,random_state= 101)
 print(x_train.shape)
